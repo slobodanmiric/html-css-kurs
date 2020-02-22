@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektori</title>
+    <style>
+        p {
+            color: red;
+        }
+        div p {
+            color: blueviolet;
+        }
+        .divElement ol {
+            color: green;
+        }
+        input[type="submit"] {
+            border: none;
+            background: red;
+            color: white;
+            font-size: 18px;
+            padding: 20px 40px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: black;
+            color: white;
+            transition: .6s ease;
+        }
+        #paragraf {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selektori</h1>
+    <p>Selektovanjem dolazimo do elemenata unutar HTML-a i tako ih stilizujemo</p>
+    <hr>
+    <div class="divElement">
+        <p>Prvi paragraf</p>
+        <p>Drugi paragraf</p>
+        <p>Treci paragraf</p>
+        <!-- ol>li{Clan liste $}*3 -->
+         <ol>
+             <li>Clan liste 1</li>
+             <li>Clan liste 2</li>
+             <li>Clan liste 3</li>
+         </ol>
+    </div>
+    <p id="paragraf">Paragraf izvan DIV elementa</p>
+    <hr>
+    <input type="submit" value="Posalji poruku">
+</body>
+</html>
